@@ -1,7 +1,7 @@
 # {records}
 Final {records} architecture specification.
 
-## Basic Assuption
+## Basic Assunption
 Every transaction goes from collecting input operations, which form a logical message. A message describes a wish of intention for a record to be created.
 The record is send to a distributed and shared database cluster, which is organized and distributed around a purpose. The purpose describes what in computer science once was called an "Actor". It is logically a "class", but not in the Java object oriented sense. More int he sense of SQL or Cott's theore on first-order logic.  It is a message recipient, which is about recording results in a organized manner.
 

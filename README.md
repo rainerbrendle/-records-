@@ -16,6 +16,6 @@ May be a good collection on prior art may be found in Pat Helland's CIDR Paper o
 
 https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
 
-which contains a quite collections of older work.
+which contains a quite resonable collection of older work.
 
-We have two implmentations - one in Go and another one in Python. Both make the simple assumption that bot editing a message and storing an managing immutable messages as records are REST services, which are similiar but different. The implmentation can be don on PostgreSQL using Docker Containers.
+We have two implmentations - one is done in Go and another one in Python. Both make the simple assumption that both editing  messages and storing and managing immutable messages as records are REST services, which are similiar but different. The implmentation can be don on PostgreSQL using Docker Containers. We are suing Closures either in Go or in Python to manage similarity and to configura various services.

@@ -1,5 +1,5 @@
 # {records}
-Final {records} architecture specification.
+Final {records} architecture specification for a Active Database Cluster.
 
 (c) 2023 Rainer Brendle, Port Charlotte, FL, USA
 

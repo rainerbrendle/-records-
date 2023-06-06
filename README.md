@@ -1,5 +1,5 @@
 # {records}
-Final {records} architecture specification for a Active Database Cluster.
+Final {records} architecture specification for the creation of an Active Database Cluster of immutable records.
 
 (c) 2023 Rainer Brendle, Port Charlotte, FL, USA
 

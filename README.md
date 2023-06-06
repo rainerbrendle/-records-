@@ -26,5 +26,5 @@ We have two implmentations - one is done in Go and another one in Python. Both m
 The Golang version is in a separate git repository as well as the Python version.
 Go has the benefit that it is a strong-typed language and we can switch between strong-typed modules and loose-coupling, such that we can have schema-free database implementation.
 
-The Golang version is using Closures on anonymous REST functions and the introspection capabilities of GO to map JSON data to GO models and vice versa. Also it uses the asynchronous communication capabilities of Go using channels.
+The Golang version is using Closures on anonymous REST functions on PosttgreSQL bases ahsrded database instances and the introspection capabilities of GO to map JSON data to GO models and vice versa. Also it uses the asynchronous communication capabilities of Go using channels.
 

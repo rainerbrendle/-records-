@@ -4,18 +4,27 @@ Final {records} architecture specification for a Active Database Cluster.
 (c) 2023 Rainer Brendle, Port Charlotte, FL, USA
 
 ## Basic Assumption
-Every transaction goes from collecting input operations, which the form a logical message, when completed. A message describes a wish of intention for a record to be created.
-The record is send to a distributed and shared database cluster, which is organized and distributed around a purpose. The purpose describes what in computer science once was called an "Actor". It is logically a "class", but not in the Java object oriented sense. More int he sense of SQL or Cott's theorem on first-order logic.  It is about a message recipient, which is about recording results in a organized manner and then can create "matriealied views" on this. 
+Every more complex transactions, which go beyond simple Wordpress-like applications, goe from collecting input operations defining an intention as a form of a logical message, when completed. A copleted message describes a wish of intention for a record to be created.
 
-Results are recorded as journals of received messages. Journals form time series of collected notification in the end. Since these "time series" are stable, immutable records, we can also thransform them in - in the end - arbitrary projections.
+The record is send to a distributed and shared database cluster, which is organized and distributed around purposes. OFten this can be a workplace or an account.  
 
-Both the creation of the message and the sending an receiving of the immutable message as a record are Rest services and can be represent as Rest related services, but hey are similiar, but not the same.  
+The purpose describes what in computer science once was called an "Actor" at thre MIT. It is logically a "class", but not in the Java object-oriented sense. More in the sense of SQL or better of Cott's theorem about first-order logic.  An Actor is a message resipient, which is about recording results in a organized and timely ordere manner and then is to create "materialized views" on this as logical projections. Ypu never delete records, records are descriptions of the past. 
+
+Results are recorded as timely ordere journals of received messages. Journals form a time series of collected notification in the end on a topic. Since these "time series" are stable and immutable records, we can also thransform them into - in the end - arbitrary projections. 
+
+Both the creation of the message and the sending an receiving of the immutable message as a record form Rest services and can be represented as Rest related services, but hey are similiar, but not the same.  
 
 ### Prior Art
-May be a good collection on prior art may be found in Pat Helland's CIDR Paper of 2015.
+May be a good collection on prior art on distributed computing may be found in Pat Helland's CIDR Paper of 2015.
 
 https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
 
 which contains a quite resonable collection of older work.
 
-We have two implmentations - one is done in Go and another one in Python. Both make the simple assumption that both editing  messages and storing and managing immutable messages as records are REST services, which are similiar but different. The implmentation can be don on PostgreSQL using Docker Containers. We are suing Closures either in Go or in Python to manage similarity and to configura various services.
+We have two implmentations - one is done in Go and another one in Python. Both make the simple assumption that both editing messages, piblishing a message and storing and managing immutable messages as records are REST services, which are similiar but different. The implmentation can be done on PostgreSQL using Docker Containers. We are suing Closures either in Go or in Python to manage similarity and to configura various services. All is purely functionsl programming and can be seen as a low-code platform.
+
+The Golang version is in a separate git repository as well as the Python version.
+Go has the benefit that it is a strong-typed language and we can switch between strong-typed modules and loose-coupling, such that we can have schema-free database implementation.
+
+The Golang version is using Closures on anonymous REST functions and the introspection capabilities of GO to map JSON data to GO models and vice versa. Also it uses the asynchronous communication capabilities of Go using channels.
+

@@ -12,11 +12,13 @@ Records are asynchronous messages, which are send to a distributed and shared da
 
 The recipient assigned to a message describes what in computer science once was called an "Actor" at MIT years ago. It is logically a "class", but not in the Java object-oriented sense. More in the sense of SQL or better in the sense of Cott's theorem about first-order logic.  
 
-An Actor is a message resipient, which is about recording results in a organized and timely ordered manner and then is to create "materialized views" on this as logical projections. Ypu never delete records, records are descriptions of the past. 
+An Actor is a message recipient, which is about recording results in a organized and timely ordered manner and then is to create "materialized views" on this as logical projections. Ypu never delete records, records are descriptions of the past. 
 
 Results are recorded as timely ordered journals of received messages on an "Actor". Journals form a time series of collected notification in the end on a topic. Since these "time series" are stable and immutable records, we can also thransform them into - in the end - arbitrary projections. 
 
 Both the creation of the message and the sending an receiving of the immutable message as a record form Rest services and can be represented as Rest related services, but hey are similiar, but not the same.  
+
+As soon as a Joournal is created, we can generate sanpshots as redundant sets of informations, but not they also can be views with projection defined by further criteria.
 
 ### Prior Art
 May be a good collection on prior art on distributed computing may be found in Pat Helland's CIDR Paper of 2015.

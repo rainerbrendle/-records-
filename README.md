@@ -33,7 +33,7 @@ We have two implmentations - one is done in Go and another one in Python. Both m
 
 The implmentation can be done on PostgreSQL using Docker Containers. We are using Closures either in Go or in Python to manage similarity and to configure various services. All is purely functionsl programming and can be seen as a low-code platform, if we want to.
 
-The Golang version is in a separate git repository as well as the Python version.
+The Golang version is in a separate Git repository as well as the Python version.
 Go has the benefit that it is a strong-typed language and we can switch between strong-typed modules and having loose-coupling between them, such that we can have a mostly schema-free database implementation, while persistent messages are either JSON or AVRO messages. 
 
 The Golang version is using Closures on anonymous REST functions on PostgreSQL based based database instances and the introspection capabilities of GO to map JSON data to GO models and vice versa. Also it uses the asynchronous communication capabilities of Go using channels.
